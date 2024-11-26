@@ -59,7 +59,7 @@ btn.addEventListener("click", async (e) => {
   let fromVal = data.eur[fromFieldCur];
   let toVal = data.eur[toFieldCur];
   //   console.log(fromVal, toVal);
-  let rate = (toVal / fromVal) * inputVal;
+  let rate = ((toVal / fromVal) * inputVal).toFixed(2);
   //   console.log(rate);
 
   const msgField = document.querySelector(".msg");
